@@ -1,0 +1,30 @@
+.nav-item, home-page {
+    padding-left: 13px;
+}
+
+.splash-cover {
+    /* z-index: -2; */
+    position:absolute;
+    height:835px;
+    width:100%;
+    margin-left: 0px;
+    object-fit:cover;
+    /* padding: 0px 0px 0px 0px; */
+    /* overflow: hidden; */
+    z-index: -2;
+    /* filter: brightness(0) saturate(100%) invert(29%) sepia(41%) saturate(4792%) hue-rotate(209deg) brightness(101%) contrast(99%), opacity(1); */
+
+}
+
+.splashscreen {
+    /* margin-left: -5px; */
+    height:835px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+#first-call-action {
+    position: relative;
+    top: 170px;
+    color: white;
+}
