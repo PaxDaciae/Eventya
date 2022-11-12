@@ -84,10 +84,42 @@ body{
 /* Snippet Boxes */
 
 .snip-box{
-    width:200px;
-    height:200px;
+    width:335px;
+    height:356px;
     border-style:hidden;
     border-width: 1px;
     border-radius: 10px;
-    box-shadow:0px 5px 12px rgba(0, 0, 0, 0.2)
+    box-shadow:0px 5px 12px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+}
+
+.snip-box-top {
+    height: 186px;
+    background-color: RGB(57, 130, 168);
+}
+
+.snip-box-bottom {
+    height:335px;
+    font-size: 14px;
+    color: RGB(121, 121, 138)
+    
+}
+
+.snip-box, .fw-bold {
+    font-size: 20px;
+    color:RGB(30, 48, 77);
+}
+
+/* Reasons snippet */
+
+#reasons-snippet {
+   
+    width: 2,159px;
+    height: 700px;
+    /* background-color:chartreuse; */
+    background-color: RGB(250, 251, 252);
+}  
+
+#reasons-snippet-mid-message{
+    padding-top: 65px;
 }
