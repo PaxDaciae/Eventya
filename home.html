@@ -21,7 +21,7 @@
 
     <!-- Welcome screen background image -->
     <div class="container-fluid" id = "splashscreen">
-      <img src="Images/Background_home.jpg" class="splash-cover">
+      <img src="Images/Background_home.jpg" class="splash-cover" style = "height:835px; width:100%;">
 
       <!-- This div goes over the bacground image to apply a blue filter -->
       <div id = "blue-overlay"></div>
@@ -501,7 +501,10 @@
                   <div class="container">
                     <div class = "fw-bold">2. App Management Training</div>
                   </div>
-                  <div class="container-fluid snip-bottom">
+
+                  <!-- I had to add a margin-top here to alling the text with the other elemnets ---- Why???? -->
+
+                  <div class="container-fluid snip-bottom" style = "margin-top: 10px;">
                     <p>
                       At any time during your 90 days trial, you can request an app management training with one of our consultants.
                     </p>
@@ -563,7 +566,7 @@
       </div>
 
       <!-- Snippet elements -->
-      <div class = "container" style = "padding-top: 40px;">
+      <div class = "container" style = "padding-top: 10px;">
         <div class="row mb-4"> 
 
           <!-- Element 1 -->
@@ -698,12 +701,38 @@
         </div>
       </div>
 
+      <!-- Read More button -->
+      <div class = "container text-center">
+        <button class = "btn btn-mainbuttonblue text-white" style= "margin-top:44px;">Read More</button>
+      </div>
+
+      <!-- Stay up to date with things -->
+      <div class = "container-fluid">
+        <div class="container mid-message text-center">
+          <p class = "mid-message-text" style="margin-top:78px;">
+            Want to <b>stay up-to-date</b> with our news, ideas and updates?
+          </p>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <button class = "btn btn-mainbuttonblue text-white" style = "margin-top:-10px; height: 46px;">Subscribe to our Newsletter</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- <div class = "container-flexible bg-light" id=""></div> -->
 
 
 
-
+    <div class="container-fluid" style = "height:358.01px; width: 2,159px; overflow:hidden; padding:0px;">
+      <img src="Images/Background_home_lower.jpg" class = "splash-cover" style = "background-repeat: no-repeat; object-fit:cover; height:358.01px; width: 2,159px;">
+      <div id = "blue-overlay" style = "height:358.01px; width: 2,159px; z-index:2;"></div>
+    </div>
 
 
     <div class = "container">

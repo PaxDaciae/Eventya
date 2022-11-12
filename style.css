@@ -46,7 +46,7 @@ body{
     width:100%;
     object-fit:cover;
     position:absolute;
-    margin-left: 0px;
+    /* margin-left: 0px; */
     background-color: blue;
     opacity:0.3;
     
