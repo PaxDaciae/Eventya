@@ -4,6 +4,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.row .col .container {
+    padding-top:10px;
+}
+
 /* Splashscreen */
 
 .nav-item, home-page {
@@ -111,7 +115,7 @@ body{
 }
 
 .snip-box-bottom .p {
-    
+
 }
 
 .snip-box, .fw-bold {
