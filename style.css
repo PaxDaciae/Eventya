@@ -33,6 +33,10 @@ body{
 
 }
 
+.btn-mainbuttonblue{
+    background-color: RGB(63, 172, 250);
+}
+
 #blue-overlay {
     height:835px;
     width:100%;
@@ -84,8 +88,6 @@ body{
 /* Snippet Boxes */
 
 .snip-box{
-    width:335px;
-    height:356px;
     border-style:hidden;
     border-width: 1px;
     border-radius: 10px;
@@ -94,12 +96,10 @@ body{
 }
 
 .snip-box-top {
-    height: 186px;
     background-color: RGB(57, 130, 168);
 }
 
 .snip-box-bottom {
-    height:335px;
     font-size: 14px;
     color: RGB(121, 121, 138)
     
@@ -114,10 +114,9 @@ body{
 
 #reasons-snippet {
    
-    width: 2,159px;
-    height: 700px;
+    
     /* background-color:chartreuse; */
-    background-color: RGB(250, 251, 252);
+    /* background-color: RGB(250, 251, 252); */
 }  
 
 #reasons-snippet-mid-message{
