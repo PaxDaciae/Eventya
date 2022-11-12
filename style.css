@@ -2,19 +2,6 @@
     padding-left: 13px;
 }
 
-.splash-cover {
-    /* z-index: -2; */
-    position:absolute;
-    height:835px;
-    width:100%;
-    margin-left: 0px;
-    object-fit:cover;
-    /* padding: 0px 0px 0px 0px; */
-    /* overflow: hidden; */
-    z-index: -2;
-    /* filter: brightness(0) saturate(100%) invert(29%) sepia(41%) saturate(4792%) hue-rotate(209deg) brightness(101%) contrast(99%), opacity(1); */
-
-}
 
 .splashscreen {
     /* margin-left: -5px; */
@@ -23,8 +10,45 @@
     padding: 0px;
 }
 
+.splash-cover {
+    height:835px;
+    width:100%;
+    object-fit:cover;
+    position:absolute;
+    margin-left: 0px;
+
+    /* z-index: -2; */
+   
+    /* padding: 0px 0px 0px 0px; */
+    /* overflow: hidden; */
+    /* filter: brightness(0) saturate(100%) invert(29%) sepia(41%) saturate(4792%) hue-rotate(209deg) brightness(101%) contrast(99%), opacity(1); */
+
+}
+
+#blue-overlay {
+    height:835px;
+    width:100%;
+    object-fit:cover;
+    position:absolute;
+    margin-left: 0px;
+    background-color: blue;
+    opacity:0.3;
+    
+    /* z-index: -2; */
+}
+
+
 #first-call-action {
     position: relative;
     top: 170px;
     color: white;
+}
+
+#light-blue-bground-shape{
+    /* position:relative; */
+    /* z-index: ; */
+    background-color: cornflowerblue;
+    width:960px;
+    height: 174px;
+    /* margin-right: 100px; */
 }
