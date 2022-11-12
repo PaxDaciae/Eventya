@@ -3,7 +3,7 @@
 }
 
 
-.splashscreen {
+#splashscreen {
     /* margin-left: -5px; */
     height:835px;
     overflow: hidden;
@@ -50,5 +50,5 @@
     background-color: cornflowerblue;
     width:960px;
     height: 174px;
-    /* margin-right: 100px; */
+    margin-right: 100px;
 }
