@@ -1,9 +1,13 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .nav-item, home-page {
     padding-left: 13px;
 }
 
 
-#splashscreen {
+.splashscreen {
     /* margin-left: -5px; */
     height:835px;
     overflow: hidden;
@@ -37,18 +41,31 @@
     /* z-index: -2; */
 }
 
+#welcome-text-container {
+    width: 960px;
+    height: 174px;
+    position: absolute;
+    top: 284px;
+    left: 200px;
+    background-color: crimson;
+}
 
-#first-call-action {
-    position: relative;
-    top: 170px;
+#text-call-action {
+    /* position: relative; */
+    /* top: 170px; */
+    margin-right: 30px;
     color: white;
 }
 
 #light-blue-bground-shape{
-    /* position:relative; */
+    position:absolute;
     /* z-index: ; */
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     width:960px;
     height: 174px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
+}
+
+#button-container-splashscreen {
+
 }
