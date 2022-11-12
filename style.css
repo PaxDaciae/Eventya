@@ -85,6 +85,10 @@ body{
     margin-bottom: 40px;
 }
 
+.mid-message-text {
+    font-size: 32px;
+}
+
 /* Snippet Boxes */
 
 .snip-box{
@@ -101,7 +105,12 @@ body{
 
 .snip-box-bottom {
     font-size: 14px;
-    color: RGB(121, 121, 138)
+    color: RGB(121, 121, 138);
+    line-height: 22px;
+    
+}
+
+.snip-box-bottom .p {
     
 }
 
@@ -110,6 +119,9 @@ body{
     color:RGB(30, 48, 77);
 }
 
+.snip-box .fw-bold{
+    /* padding-top: 10px; */
+}
 /* Reasons snippet */
 
 #reasons-snippet {
