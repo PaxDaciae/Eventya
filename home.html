@@ -95,13 +95,11 @@
               Create your mobile app and website!
               <br>
               No coding required.
-            </p>
-
-
-            
+            </p>            
           </div>
-
       </div>
+
+      <!-- Splashscreen buttons -->
         <div class="container" style="margin-left: 90px; margin-top:59px;">
           <button type="button" class="btn text-white" style="background-color:RGB(254, 154, 16); font-size: 14px; border-radius:25px;">
             <b>Create your app</b> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
@@ -737,8 +735,8 @@
 
     <!-- Lower-page splash / banner image -->
 
-    <div class="container-fluid" style = "height:358.01px; width: 2,159px; overflow:hidden; padding:0px;">
-      <img src="Images/Background_home_lower.jpg" class = "splash-cover" style = "background-repeat: no-repeat; object-fit:cover; height:358.01px; width: 2,159px;">
+    <div class="container-fluid" style = "height:358.01px; width: 2,159px; overflow:hidden; padding:0px; background-image:url(Images/Background_home_lower.jpg); background-repeat: no-repeat; background-size:cover;">
+      
       <div id = "blue-overlay" style = "height:358.01px; width: 2,159px; z-index:2;"></div>
     </div>
 
@@ -748,31 +746,37 @@
       <div class = "container mid-message text-center" style = "margin-top: 0px;">
         <p class = "mid-message-text" style = "padding-top: 85.99px;">Why Our <b>Customers</b> Love Working With Us</p>
       </div>
-    
-      <!-- Dintre Clientii Nostri -->
-      <div class = "container mid-message text-center">
-        <p class = "mid-message-text">Dintre <b>clienții</b> noștrii</p>
+      
+      <div class = "container" id = "clienti-testimony-snippets" style = "height: 468px; width: 1,196px; background-color: yellow;">
+
       </div>
-
-      <div class = "container">
-        <div class="row" style = "height: 78px;">
-          <div class="col"></div>
-
-          <div class="col">
-            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
-          </div>
-          <div class="col">
-            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
-          </div>
-          <div class="col">
-            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
-          </div>
-          <div class="col">
-            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
-          </div>
+      
+      <!-- Dintre Clientii Nostri -->
+      <div class = "container-fluid" id = "dintre-clientii-nostri">
+        <div class = "container mid-message text-center">
+          <p class = "mid-message-text">Dintre <b>clienții</b> noștrii</p>
+        </div>
+        <!-- Logo Clientii Nostri -->
+        <div class = "container">
+          <div class="row" style = "height: 78px;">
+            <div class="col"></div>
   
-  
-          <div class="col"></div>
+            <div class="col">
+              <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+            </div>
+            <div class="col">
+              <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+            </div>
+            <div class="col">
+              <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+            </div>
+            <div class="col">
+              <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+            </div>
+    
+    
+            <div class="col"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -780,7 +784,7 @@
     <!-- Even-lower-page splash / banner image -->
     <!-- Background Image and blue overlay -->
     <div class="container-fluid" style = "height:400px; width: 2,147px; padding:0px; margin:0px;">
-      <div class="container-fluid" style = "height:400px; width: 2,147px; overflow:hidden; padding:0px; background-image:url(Images/Background_home_lower.jpg); background-repeat: no repeat; object-fit: cover;">
+      <div class="container-fluid" style = "height:400px; width: 2,147px; overflow:hidden; padding:0px; background-image:url(Images/Background_home_lower.jpg); background-repeat: no repeat; background-size: cover;">
         <div id = "blue-overlay" style = "height:400px; width: 2,147px;; z-index:2;">
         </div>
       </div>
@@ -798,19 +802,21 @@
             <div class="row">
               <div class="col"></div>
               <div class="col-3">
-                <button type = "button" class = "btn btn-mainbuttonblue">Create your app</button>
+                <button type = "button" class = "btn btn-mainbuttonblue text-white"><b>Create your app</b></button>
               </div>
               <div class="col-1">
-                <p style = "padding-top: 10px;">OR</p>
+                <p class = "text-white" style = "padding-top: 10px; font-weight: 500;">OR</p>
               </div>
               <div class="col-3">
-                <button type = "button" class = "btn btn-mainbuttonblue">Schedule a Demo</button>
+                <button type = "button" class = "btn btn-mainbuttonblue text-white"><b>Schedule a Demo</b></button>
     
               </div>
               <div class="col"></div>
             </div>
           </div>
         </div>
+
+        <!-- Phone number -->
         <div class = "container text-center text-white" style = "padding-top:10px;">
           <p><b>Have a question? Give us a call xxx-xxx-xxxx</b></p>
         </div>
