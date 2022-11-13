@@ -74,9 +74,6 @@ body{
 
 #welcome-text-color-background {
     background-color: RGB(86, 111, 204);
-    width: 960px;
-    height: 158px;
-
 }
 
 #text-call-action {
@@ -90,7 +87,7 @@ body{
     position:absolute;
     /* z-index: ; */
     /* background-color: cornflowerblue; */
-    width:960px;
+    width: 960px;
     height: 174px;
     /* margin-right: 100px; */
 }
