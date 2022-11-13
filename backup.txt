@@ -1,0 +1,39 @@
+<!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
+        <!-- Navbar -->
+        <div class = "navbar navbar-expand navbar-dark bg-primary" style = "width: 1109px; height: 45px; margin-top: 30px;">
+            <a class="navbar-brand" href="#"">
+              <img src="Images/logo.JPG" style="width: 40%; height: auto; padding-left:10px;">
+            </a>
+            <ul class = "navbar-nav" style = "padding-left: 100px;">
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Home</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Features</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Solutions</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Portfolio</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Updates</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">FAQ</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Blog</a>
+              </li>
+            </ul>
+            
+            <button type="button" href ="#" class="btn btn-mainbuttonblue text-white" style = "margin-left:20px;">Create your app</button>
+    
+          </div>

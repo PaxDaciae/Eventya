@@ -17,16 +17,16 @@ body{
 
 #splashscreen {
     /* margin-left: -5px; */
+    /* position:absolute */
     height:835px;
     overflow: hidden;
     padding: 0px;
 }
 
 .splash-cover {
-    height:835px;
-    width:100%;
     object-fit:cover;
     position:absolute;
+    background-repeat: no-repeat;
     margin-left: 0px;
 
     /* z-index: -2; */
@@ -41,6 +41,17 @@ body{
     background-color: RGB(63, 172, 250);
 }
 
+#welcome-screen-background-and-overlay{
+    background-image: url("Images/Background_home.jpg");
+    position: absolute;
+    background-repeat: no-repeat;
+    object-fit:cover;
+    padding: 0px;
+    background-size:100%;
+    overflow: hidden;
+    z-index: -2;
+}
+
 #blue-overlay {
     height:835px;
     width:100%;
@@ -50,16 +61,22 @@ body{
     background-color: blue;
     opacity:0.3;
     
-    /* z-index: -2; */
+    z-index: -1;
 }
 
 #welcome-text-container {
-    width: 960px;
+    width: 620px;
     height: 174px;
-    position: absolute;
-    top: 284px;
-    left: 200px;
-    background-color: crimson;
+    /* position: absolute; */
+    /* top: 284px; */
+    /* left: 200px; */
+}
+
+#welcome-text-color-background {
+    background-color: RGB(86, 111, 204);
+    width: 960px;
+    height: 158px;
+
 }
 
 #text-call-action {

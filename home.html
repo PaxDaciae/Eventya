@@ -19,98 +19,101 @@
 
   <body>
 
-    <!-- Welcome screen background image -->
-    <div class="container-fluid" id = "splashscreen">
-      <img src="Images/Background_home.jpg" class="splash-cover" style = "height:835px; width:100%;">
+    <!-- Welcome screen background trial 2 -->
 
-      <!-- This div goes over the bacground image to apply a blue filter -->
-      <div id = "blue-overlay"></div>
-
-      <!-- Container for elements above the splashscreen -->
-      <div class="container">
-
-
-        <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
-        <!-- Navbar -->
-        <div class = "navbar navbar-expand navbar-dark bg-primary bg-gradient" style = "width: 1109px; height: 45px; margin-top: 30px;">
-          <a class="navbar-brand" href="#"">
-            <img src="Images/logo.JPG" style="width: 40%; height: auto; padding-left:10px;">
-          </a>
-          <ul class = "navbar-nav" style = "padding-left: 85px;">
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Home</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Features</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Solutions</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Portfolio</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Updates</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">FAQ</a>
-            </li>
-  
-            <li class = "nav-item home-page">
-              <a href = "#" class = "nav-link">Blog</a>
-            </li>
-          </ul>
-          
-          <button type="button" href ="#" class="btn btn-mainbuttonblue text-white" style = "margin-left:35px;">Create your app</button>
-  
-        </div>
-        
-        <!-- Slashscreen  -->
-
-        <div class="container" id = "welcome-text-container">
-          <div class="row">
-
-              <div class="text-lg-center" id = "text-call-action">
-
-                <!-- Background color -->
-                <div id = "light-blue-bground-shape">
-                </div>
-
-                <!-- Text -->
-                <p class ="h2" style = "margin-top: 40px;">
-                  Create your mobile app and website!
-                  <br>
-                  No coding required.
-                </p>
-
-
-                
-              </div>
-
-          </div>
-            <div class="row">
-
-            <!-- Splashscreen buttons -->
-            <div class="col-4"></div>
-
-            <div class="col"> <button type="button" class="btn btn-warning">Create your app</button> </div>
-            <div class="col"> <button type="button" class="btn btn-warning"><u>See the steps</u></button> </div>
-
-            <div class="col-3"></div>
-
-            </div>
-
-        </div>
-
+    <div class="container-fluid" id = "welcome-screen" style = "height:835px; padding: 0px; position: absolute;">
+      <div class="container-fluid" id = "welcome-screen-background-and-overlay" style = "height:835px; width:100%;">
+        <!-- This div goes over the bacground image to apply a blue filter -->
+        <div id = "blue-overlay"></div>
       </div>
-
     </div>
 
+    <!-- Wecome screen background ends -->
+
+    <!-- Container for elements above the splashscreen -->
+
+    <div class="container" style = "height:835px;">
+
+      <!-- Navbar -->
+      <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
+
+      <div class="row">
+          <div class = "navbar navbar-expand navbar-dark bg-primary" style = "width: 1109px; height: 45px; margin-top: 21px; margin-left:45px;">
+            <a class="navbar-brand" href="#"" style = "width: 128.8px;">
+              <img src="Images/logo.JPG" style="width: 128.8px; height: auto; padding-left:-10px;">
+            </a>
+            <ul class = "navbar-nav" style = "padding-left: 190px;">
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Home</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Features</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Solutions</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Portfolio</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Updates</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">FAQ</a>
+              </li>
+    
+              <li class = "nav-item home-page">
+                <a href = "#" class = "nav-link">Blog</a>
+              </li>
+
+              <li class = "nav-item home-page">
+                <button type="button" href ="#" class="btn btn-sm btn-mainbuttonblue text-white" style = "margin-top:4px;">Create your app</button>
+              </li>
+            </ul>
+          </div>
+          
+      </div>
+
+      <!-- Splashscreen  -->
+      <div class="container" id = "welcome-text-container" style = "position: relative; top: 218px;">
+        <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; left: 25px; margin-left: -135px; margin-top:40px;"></div>
+      <div class="row">
+
+          <div class="text-lg-center" id = "text-call-action">
+
+            <!-- Background color -->
+            <div id = "light-blue-bground-shape">
+            </div>
+
+            <!-- Text -->
+            <p id = "welcome-text" style = "width: 950px; height:158px; margin-left: -150px; margin-top: 40px; font-size: 50px;">
+              Create your mobile app and website!
+              <br>
+              No coding required.
+            </p>
+
+
+            
+          </div>
+
+      </div>
+        <div class="container" style="margin-left: 90px; margin-top:59px;">
+          <button type="button" class="btn text-white" style="background-color:RGB(254, 154, 16); font-size: 14px; border-radius:25px;">
+            <b>Create your app</b> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+            </svg>
+          </button> 
+          <button type="button" class="btn text-white" style = "border-radius: 0px; width:240px; background-color: rgb(86, 111, 204)"><u>See the steps</u></button>
+        </div>
+      </div>
+
+    </div>            
+     
     <!-- Between splashscreen and Snippet Box text -->
     <div class="container mid-message text-center">
       <p class = "mid-message-text">
@@ -742,12 +745,85 @@
     <!-- Why Our Customers Love Working With Us -->
 
     <div class="container-fluid bg-light" id = "love-working-with-us" style = "height:950px;">
-      <div class = "container mid-message text-center" style = "margin-top:85.9px;">
-        <p class = "mid-message-text">Why Our <b>Customers</b> Love Working With Us</p>
+      <div class = "container mid-message text-center" style = "margin-top: 0px;">
+        <p class = "mid-message-text" style = "padding-top: 85.99px;">Why Our <b>Customers</b> Love Working With Us</p>
+      </div>
+    
+      <!-- Dintre Clientii Nostri -->
+      <div class = "container mid-message text-center">
+        <p class = "mid-message-text">Dintre <b>clienții</b> noștrii</p>
+      </div>
+
+      <div class = "container">
+        <div class="row" style = "height: 78px;">
+          <div class="col"></div>
+
+          <div class="col">
+            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+          </div>
+          <div class="col">
+            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+          </div>
+          <div class="col">
+            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+          </div>
+          <div class="col">
+            <img src = "Images/logo.JPG" style = "height:78px; width: auto;">
+          </div>
+  
+  
+          <div class="col"></div>
+        </div>
       </div>
     </div>
 
+    <!-- Even-lower-page splash / banner image -->
+    <!-- Background Image and blue overlay -->
+    <div class="container-fluid" style = "height:400px; width: 2,147px; padding:0px; margin:0px;">
+      <div class="container-fluid" style = "height:400px; width: 2,147px; overflow:hidden; padding:0px; background-image:url(Images/Background_home_lower.jpg); background-repeat: no repeat; object-fit: cover;">
+        <div id = "blue-overlay" style = "height:400px; width: 2,147px;; z-index:2;">
+        </div>
+      </div>
+      
+    <!-- Text and blue background container -->
+      <div class = "container" style = "z-index:3; width: 804px; height: 400px; position: relative; bottom: 400px; z-index: 3;">
+        <div id = "welcome-text-color-background" style = "width: 804px; height: 237px;">
+          <div class = "container mid-message text-center" style = "position: relative; padding: 0px; margin:0px; margin-top:46px;">
+            <p class = "mid-message-text text-white" style = "margin:0px; padding-top: 26px;">
+              <b>Be agile. Build less. Launch. Scale later.</b></p>
+          </div>
 
+          <!-- Buttons -->
+          <div class="container text-center" style = "width: 804px; padding-top:64px;">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-3">
+                <button type = "button" class = "btn btn-mainbuttonblue">Create your app</button>
+              </div>
+              <div class="col-1">
+                <p style = "padding-top: 10px;">OR</p>
+              </div>
+              <div class="col-3">
+                <button type = "button" class = "btn btn-mainbuttonblue">Schedule a Demo</button>
+    
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div class = "container text-center text-white" style = "padding-top:10px;">
+          <p><b>Have a question? Give us a call xxx-xxx-xxxx</b></p>
+        </div>
+      </div>
+
+      
+    </div>
+    
+   
+      
+      
+
+  
 
     <!-- whatever, man -->
     <div class = "container">
@@ -760,4 +836,10 @@
   </body>
 </html>
 
- 
+
+    <!-- Welcome screen background image -->
+
+    <!-- <div class="container-fluid" id = "splashscreen">
+      <img src="Images/Background_home.jpg" class="splash-cover" style = "height:835px; width:100%;"> -->
+
+     
