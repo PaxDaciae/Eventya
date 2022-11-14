@@ -13,28 +13,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Navbar background function -->
+    <script>
+      
+      window.onscroll = function dropDownNavBackground() { 
+        "use strict";
+        var navTarget = document.getElementById("nav-bar-background");
+
+        if (document.scrollTop >= 475  || document.documentElement.scrollTop >= 475 ) {
+          console.log("DWN")
+          // var navTarget = document.getElementById("nav-bar-background");
+          navTarget.classList.remove("nav-transparent");
+          navTarget.classList.add("nav-colored");
+        }
+        else {
+          console.log("UP")
+          navTarget.classList.add("nav-transparent");
+          navTarget.classList.remove("nav-colored");
+        }
+      };
+
+    </script>
+
   </head>
 
   <body>
     
-    <!-- Welcome screen background trial 2 -->
+    <!-- Navbar -->
+      <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
 
-    <div class="container-fluid" id = "welcome-screen" style = "height:478px; padding: 0px; position: absolute;">
-        <div class="container-fluid" id = "welcome-screen-background-and-overlay" style = "height:478px; width:100%;">
-          <!-- This div goes over the bacground image to apply a blue filter -->
-          <div id = "blue-overlay"></div>
-        </div>
-    </div>
-  
-    <!-- Container for elements above the splashscreen -->
-
-    <div class="container" style = "height:478px; width:2,159;">
-
-        <!-- Navbar -->
-        <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
-  
-        <div class="row" style = "position: absolute;">
-            <div class = "navbar navbar-expand navbar-dark bg-primary" style = "width: 1109px; height: 45px; margin-top: 21px; margin-left:45px;">
+      <div class = "container sticky-top" id = "nav-bar" style = "margin-left: 5px;">
+        
+          <div class="row" style = "position: absolute;">
+            <div class = "navigation-fixed navbar navbar-expand navbar-dark bg-primary" id = "nav-bar-fixed" style = "width: 1109px; height: 45px; top: 21px; left: 115px;">
               <a class="navbar-brand" href="#"" style = "width: 128.8px;">
                 <img src="Images/logo.JPG" style="width: 128.8px; height: auto; padding-left:-10px;">
               </a>
@@ -73,28 +85,51 @@
               </ul>
             </div>
             
-        </div>
-  
-        <!-- Splashscreen  -->
-        <div class="container" id = "welcome-text-container" style= "margin-top:250px; left:210px;">
-          <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; width:961px; height:174px;"></div>
-            <div class="container">
-  
-                <div class="text-lg-center" id = "text-call-action">
+          </div>
 
-                <!-- Text -->
-                  <p id = "welcome-text" style = "width: 626px; height:79px; margin-top: 40px; font-size: 50px;">
-                      Core Features & Modules
-                  </p>            
+          <div class = "nav-bar-background" id = "nav-bar-background" style = "width: 1200px; z-index: -1; position: absolute; left: 60px;">
+          </div>
 
-                  <p id = "welcome-undertext" style = "font-size: 16px;">These are some of the main modules that make our native apps engaging, easy to build, and highly functional.
-                  </p>
-                </div>
-            </div>
         </div>
-  
+      </div>
+
+    <!-- Welcome screen background trial 2 -->
+
+    <div class="container-fluid" id = "welcome-screen" style = "position: abosolute; top: 0px; margin-top: 0px;height:478px; padding: 0px; z-index: 2;">
+      <div class="container-fluid" id = "welcome-screen-background-and-overlay" style = "height:478px; width:100%; top:0px;">
+        <!-- This div goes over the bacground image to apply a blue filter -->
+        <div id = "blue-overlay"></div>
+      </div>
+      <!-- Container for elements above the splashscreen -->
+
+
+    
+    <div class="container" style = "position: absolute; height:478px; width:2,159; top:0px; left:0px;">
+      
+
+      <!-- Splashscreen  -->
+      <div class="container-fluid" id = "welcome-text-container" style= "margin-top:230px;">
+        <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; width:961px; height:174px;"></div>
+          <div class="container" style = "width: 961px;">
+
+              <div class="text-lg-center" id = "text-call-action" style = "margin-right:0px; width: 961px;">
+
+              <!-- Text -->
+                <p id = "welcome-text" style = "width: 626px; height:79px; font-size: 50px;">
+                    Core Features & Modules
+                </p>            
+
+                <p id = "welcome-undertext" style = "font-size: 16px;">These are some of the main modules that make our native apps engaging, easy to build, and highly functional.
+                </p>
+              </div>
+          </div>
+      </div>
+
     </div>            
      
+    </div>
+  
+    
   </body>
 
   <p>
@@ -112,5 +147,22 @@
    <p>
     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
   </p>
+
+  <p>
+    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  </p>
+
+  <p>
+    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  </p>
+
+  <p>
+    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  </p>
+
+   <p>
+    "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+  </p>
+ 
  
 </html>

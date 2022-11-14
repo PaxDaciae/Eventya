@@ -65,8 +65,6 @@ body{
 }
 
 #welcome-text-container {
-    width: 620px;
-    height: 174px;
     /* position: absolute; */
     /* top: 284px; */
     /* left: 200px; */
@@ -151,4 +149,17 @@ body{
 
 #reasons-snippet-mid-message{
     padding-top: 65px;
+}
+
+/* Features Page */
+
+.nav-colored { height:90px; }
+.nav-transparent { height:0px;}
+
+.nav-bar-background{
+    overflow:hidden;
+    background-color:red;
+    border-radius: 0px 0px 25px 25px;
+    transition-property: height;
+    transition: 0.5s;
 }
