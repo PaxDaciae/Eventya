@@ -151,6 +151,12 @@ body{
     padding-top: 65px;
 }
 
+table > tbody > tr a {
+    text-decoration: none;
+    color: RGB(121, 121, 138);
+    font-size: 14px;
+}
+
 /* Features Page */
 
 .nav-colored { height:90px; }
@@ -168,6 +174,6 @@ body{
     list-style: none;
 }
 
-.feature-page, .ul, li{
+.feature-page > li{
     margin-bottom: -25px;
 }
