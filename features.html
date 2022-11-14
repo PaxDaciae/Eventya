@@ -95,7 +95,7 @@
 
     <!-- Welcome screen background trial 2 -->
 
-    <div class="container-fluid" id = "welcome-screen" style = "position: abosolute; top: 0px; margin-top: 0px;height:478px; padding: 0px; z-index: 2;">
+    <div class="container-fluid" id = "welcome-screen" style = "top: 0px; margin-top: 0px;height:478px; padding: 0px; z-index: 2;">
       <div class="container-fluid" id = "welcome-screen-background-and-overlay" style = "height:478px; width:100%; top:0px;">
         <!-- This div goes over the bacground image to apply a blue filter -->
         <div id = "blue-overlay"></div>
@@ -103,31 +103,30 @@
       <!-- Container for elements above the splashscreen -->
 
 
-    
-    <div class="container" style = "position: absolute; height:478px; width:2,159; top:0px; left:0px;">
-      
-
       <!-- Splashscreen  -->
+
+    <div class="container" id = "welcome-screeen-text-and-color-div-container" style = "position: absolute; height:478px; width:2,159;">
       <div class="container-fluid" id = "welcome-text-container" style= "margin-top:230px;">
-        <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; width:961px; height:174px;"></div>
-          <div class="container" style = "width: 961px;">
-
-              <div class="text-lg-center" id = "text-call-action" style = "margin-right:0px; width: 961px;">
-
-              <!-- Text -->
-                <p id = "welcome-text" style = "width: 626px; height:79px; font-size: 50px;">
-                    Core Features & Modules
-                </p>            
-
-                <p id = "welcome-undertext" style = "font-size: 16px;">These are some of the main modules that make our native apps engaging, easy to build, and highly functional.
-                </p>
-              </div>
+        <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; width:961px; height:174px; left:210px; top:250px;">
+        </div>
+         <!-- Text -->
+         <div class="container text-center" style = "width: 961px; margin-left: 350px;">
+          <div class="text-lg-center" id = "text-call-action" style = "width: 961px;">
+            <p class = "text-center" id = "welcome-text" style = "width: 626px; height:79px; font-size: 50px; margin-top: -50px;">
+                Core Features & Modules
+            </p>            
+            <p id = "welcome-undertext" style = "width: 585px; height: 44px; font-size: 16px;">These are some of the main modules that make our native apps engaging, easy to build, and highly functional.
+            </p>
           </div>
+         </div>
+          
       </div>
 
     </div>            
      
-    </div>
+  </div>
+  
+
   
     
   </body>
