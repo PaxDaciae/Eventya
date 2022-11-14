@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    width: auto;
 }
 
 .row .col .container {

@@ -24,12 +24,11 @@
   <body>
     
     <!-- Navbar -->
-      <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
-
-    <div class = "container sticky-top" id = "nav-bar" style = "margin-left: 5px;">
+    <!-- Need to do: make navbar bg gradient; bg-gradient bg-primary doesn't work -->
+    <div class = "container" id = "nav-bar" style ="">
         
-          <div class="row" style = "position: absolute;">
-            <div class = "navigation-fixed navbar navbar-expand navbar-dark bg-primary" id = "nav-bar-fixed" style = "width: 1109px; height: 45px; top: 21px; left: 115px;">
+          <div class="row  sticky-top" style = "position: absolute;">
+            <div class = "navbar navbar-expand navbar-dark bg-primary" id = "nav-bar-fixed" style = "width: 1109px; height: 45px; top: 21px; left: 115px;">
               <a class="navbar-brand" href="#"" style = "width: 128.8px;">
                 <img src="Images/logo.JPG" style="width: 128.8px; height: auto; padding-left:-10px;">
               </a>
@@ -74,11 +73,13 @@
           </div>
 
     </div>
+
+    
     <!-- End of Navbar Section -->
 
     <!-- Welcome screen background trial 2 -->
 
-    <div class="container-fluid" id = "welcome-screen" style = "top: 0px; margin-top: 0px;height:478px; padding: 0px; z-index: 2;">
+    <div class="container-fluid" id = "welcome-screen" style = "top: 0px; margin-top: 0px; padding: 0px; z-index: 2;">
       <div class="container-fluid" id = "welcome-screen-background-and-overlay" style = "height:478px; width:100%; top:0px;">
         <!-- This div goes over the bacground image to apply a blue filter -->
         <div id = "blue-overlay"></div>
@@ -90,14 +91,12 @@
 
       <!-- Splashscreen  -->
 
-      <div class="container" id = "welcome-screeen-text-and-color-div-container" style = "position: absolute; height:478px; width:2,159;">
+      <div class="container" id = "welcome-screeen-text-and-color-div-container" style = "height:478px; width:2,159; margin-top: -230px;">
         <div class="container-fluid" id = "welcome-text-container" style= "margin-top:230px;">
-          <div id = "welcome-text-color-background" style = "position: absolute; z-index:-1; width:961px; height:174px; left:210px; top:250px;">
-          </div>
           <!-- Text -->
           <div class="container text-center" style = "width: 961px; margin-left: 350px;">
             <div class="text-lg-center" id = "text-call-action" style = "width: 961px;">
-              <p class = "text-center" id = "welcome-text" style = "width: 626px; height:79px; font-size: 50px; margin-top: -50px;">
+              <p class = "text-center" id = "welcome-text" style = "width: 626px; height:79px; font-size: 50px;margin-top: -16  0px;">
                   Core Features & Modules
               </p>            
               <p id = "welcome-undertext" style = "width: 585px; height: 44px; font-size: 16px;">These are some of the main modules that make our native apps engaging, easy to build, and highly functional.
