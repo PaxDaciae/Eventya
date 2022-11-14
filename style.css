@@ -163,3 +163,11 @@ body{
     transition-property: height;
     transition: 0.2s;
 }
+
+.feature-page, .ul{
+    list-style: none;
+}
+
+.feature-page, .ul, li{
+    margin-bottom: -25px;
+}
